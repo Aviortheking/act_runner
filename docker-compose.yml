@@ -1,10 +1,10 @@
-version: "3.8"
+version: "3.3"
 services:
   runner:
     image: gitea/act_runner:latest
     environment:
       CONFIG_FILE: /config.yaml
     volumes:
-      - ./config.yaml:/config.yaml
+      - ./config.yml:/config.yaml
       - ./data:/data
       - /var/run/docker.sock:/var/run/docker.sock
